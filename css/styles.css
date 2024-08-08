@@ -1,0 +1,95 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.dot-separator {
+  margin-left: 45px;
+  margin-right: 25px;
+}
+
+.link {
+  text-decoration: underline;
+  color: var(--grayscale-02);
+  transition: text-decoration-color 0.3s;
+  text-decoration-color: rgba(0, 0, 0, 0);
+}
+@media (hover: hover) {
+  .link:hover {
+    text-decoration-color: rgb(0, 0, 0);
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.button-nav__active {
+  background: var(--grayscale-01);
+  color: #FFFFFF;
+}
+.button-outlined__invert, .button-outlined {
+  border-radius: 15px;
+  background: transparent;
+  font-weight: 500;
+}
+.button-outlined {
+  border: 2px solid var(--secondary-green);
+}
+.button-outlined__invert {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.button-ghost {
+  font-weight: 600;
+  background: none;
+  border-radius: 50%;
+}
+.button-filled {
+  background: var(--main-green);
+  color: #FFFFFF;
+}
+@media (hover: hover) {
+  .button-outlined:hover {
+    background-color: var(--secondary-green);
+    color: #FFFFFF;
+  }
+  .button-outlined__invert:hover {
+    background-color: #FFFFFF;
+    color: var(--secondary-green);
+  }
+  .button-ghost:hover {
+    background: var(--secondary-green);
+    color: #FFFFFF;
+  }
+  .button-filled:hover {
+    background: var(--secondary-green);
+    color: #FFFFFF;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
